@@ -1,12 +1,5 @@
-1.WebContent/signup.jsp
-<form action="signup" method="post">
-    <label>Username:</label>
-    <input type="text" name="username" required>
-    <label>Password:</label>
-    <input type="password" name="password" required>
-    <button type="submit">Sign Up</button>
-</form>
-2.WebContent/login.jsp
+
+1.WebContent/login.jsp
 <form action="login" method="post">
     <label>Username:</label>
     <input type="text" name="username" required>
@@ -14,7 +7,7 @@
     <input type="password" name="password" required>
     <button type="submit">Login</button>
 </form>
-3. WebContent/createSoftware.jsp
+2. WebContent/createSoftware.jsp
 <form action="createSoftware" method="post">
     <label>Software Name:</label>
     <input type="text" name="name" required>
@@ -26,7 +19,7 @@
     <input type="checkbox" name="accessLevels" value="Admin"> Admin
     <button type="submit">Create Software</button>
 </form>
-4. WebContent/requestAccess.jsp
+3. WebContent/requestAccess.jsp
 <form action="requestAccess" method="post">
     <label>Software:</label>
     <select name="softwareId">
@@ -42,7 +35,7 @@
     <textarea name="reason"></textarea>
     <button type="submit">Request Access</button>
 </form>
-5. WebContent/pendingRequests.jsp
+4. WebContent/pendingRequests.jsp
 <!-- Display pending requests for managers -->
 <table>
     <tr>
