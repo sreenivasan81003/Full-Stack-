@@ -1,4 +1,4 @@
-package com.yourpackage;
+package com.usermanagement;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
