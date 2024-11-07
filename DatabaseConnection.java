@@ -9,9 +9,9 @@ public class DatabaseConnection {
         try {
             Class.forName("org.postgresql.Driver");
             return DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/sreenivasan81003", 
-                "sreenivasan81003@gmail.com", 
-                "sreenivasan81003");
+                "jdbc:postgresql://localhost:5432/your_db_name", 
+                "your_username", 
+                "your_password");
         } catch (ClassNotFoundException | SQLException e) {
             throw new SQLException("Connection failed", e);
         }
