@@ -62,7 +62,7 @@
         </li>
         <!-- Add more requests as needed -->
     </ul>
-    <!-- Dynamically populate rows -->
+    
 </table>
 Final Project Structure
 User-Access-Management-System/
@@ -70,7 +70,6 @@ User-Access-Management-System/
 │   └── com/
 │       └── usermanagement/
 │           ├── DatabaseConnection.java
-│           ├── SignUpServlet.java
 │           ├── LoginServlet.java
 │           ├── SoftwareServlet.java
 │           ├── RequestServlet.java
