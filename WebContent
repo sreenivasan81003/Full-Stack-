@@ -1,0 +1,76 @@
+1.WebContent/signup.jsp
+<form action="signup" method="post">
+    <label>Username:</label>
+    <input type="text" name="username" required>
+    <label>Password:</label>
+    <input type="password" name="password" required>
+    <button type="submit">Sign Up</button>
+</form>
+2.WebContent/login.jsp
+<form action="login" method="post">
+    <label>Username:</label>
+    <input type="text" name="username" required>
+    <label>Password:</label>
+    <input type="password" name="password" required>
+    <button type="submit">Login</button>
+</form>
+3. WebContent/createSoftware.jsp
+<form action="createSoftware" method="post">
+    <label>Software Name:</label>
+    <input type="text" name="name" required>
+    <label>Description:</label>
+    <textarea name="description"></textarea>
+    <label>Access Levels:</label>
+    <input type="checkbox" name="accessLevels" value="Read"> Read
+    <input type="checkbox" name="accessLevels" value="Write"> Write
+    <input type="checkbox" name="accessLevels" value="Admin"> Admin
+    <button type="submit">Create Software</button>
+</form>
+4. WebContent/requestAccess.jsp
+<form action="requestAccess" method="post">
+    <label>Software:</label>
+    <select name="softwareId">
+        <!-- Populate dynamically with available software -->
+    </select>
+    <label>Access Type:</label>
+    <select name="accessType">
+        <option value="Read">Read</option>
+        <option value="Write">Write</option>
+        <option value="Admin">Admin</option>
+    </select>
+    <label>Reason:</label>
+    <textarea name="reason"></textarea>
+    <button type="submit">Request Access</button>
+</form>
+5. WebContent/pendingRequests.jsp
+<!-- Display pending requests for managers -->
+<table>
+    <tr>
+        <th>Employee</th>
+        <th>Software</th>
+        <th>Access Type</th>
+        <th>Reason</th>
+        <th>Action</th>
+    </tr>
+    <!-- Dynamically populate rows -->
+</table>
+Final Project Structure
+sql
+Copy code
+User-Access-Management-System/
+├── src/
+│   └── com/
+│       └── yourpackage/
+│           ├── DatabaseConnection.java
+│           ├── SignUpServlet.java
+│           ├── LoginServlet.java
+│           ├── SoftwareServlet.java
+│           ├── RequestServlet.java
+│           └── Approval
+
+
+
+
+
+
+
