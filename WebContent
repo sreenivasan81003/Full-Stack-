@@ -55,8 +55,6 @@
     <!-- Dynamically populate rows -->
 </table>
 Final Project Structure
-sql
-Copy code
 User-Access-Management-System/
 ├── src/
 │   └── com/
