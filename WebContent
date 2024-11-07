@@ -21,7 +21,7 @@
 </form>
 3. WebContent/requestAccess.jsp
 <form action="requestAccess" method="post">
-    <label>Software:</label>
+    <label>Software Name:</label>
     <select name="softwareId">
         <!-- Populate dynamically with available software -->
     </select>
@@ -31,9 +31,9 @@
         <option value="Write">Write</option>
         <option value="Admin">Admin</option>
     </select>
-    <label>Reason:</label>
+    <label>Reason for Request:</label>
     <textarea name="reason"></textarea>
-    <button type="submit">Request Access</button>
+    <button type="submit">Submit Request </button>
 </form>
 4. WebContent/pendingRequests.jsp
 <!-- Display pending requests for managers -->
@@ -45,6 +45,23 @@
         <th>Reason</th>
         <th>Action</th>
     </tr>
+<ul class="request-list">
+        <li class="request-item">
+            <span>Request #1: User John Doe</span>
+            <div>
+                <button class="approve-btn">Approve</button>
+                <button class="deny-btn">Deny</button>
+            </div>
+        </li>
+        <li class="request-item">
+            <span>Request #2: User Jane Smith</span>
+            <div>
+                <button class="approve-btn">Approve</button>
+                <button class="deny-btn">Deny</button>
+            </div>
+        </li>
+        <!-- Add more requests as needed -->
+    </ul>
     <!-- Dynamically populate rows -->
 </table>
 Final Project Structure
